@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Book a consultation at Bellure Clinic, see our gallery, find our location and read frequently asked questions.">
+<title>Contact & Booking — Bellure Clinic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<style>
+  .faq details{ border-bottom:1px solid var(--line); padding:16px 0; }
+  .faq summary{ cursor:pointer; font-weight:500; font-family:'Fraunces',serif; }
+  .faq p{ margin-top:10px; }
+  .map-frame{ border-radius:var(--radius); overflow:hidden; border:1px solid var(--line); }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="logo" href="index.html"><span class="rings" aria-hidden="true"><i></i><i></i><i></i></span>Bellure Clinic</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+    <label for="nav-toggle" class="nav-toggle" aria-label="Toggle menu"><span></span></label>
+    <nav class="main-nav" aria-label="Main menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn" href="#booking">Book a visit</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="section" style="padding-bottom:0;">
+    <div class="wrap">
+      <span class="eyebrow">Contact</span>
+      <h1>Let's plan your first visit</h1>
+      <p style="max-width:60ch;">Send a few details and we'll confirm a consultation time within one business day.</p>
+    </div>
+  </section>
+
+  <section class="section" id="booking">
+    <div class="wrap grid grid-2">
+      <form action="#" method="post">
+        <div class="field">
+          <label for="name">Full name</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel">
+        </div>
+        <div class="field">
+          <label for="service">Treatment you're interested in</label>
+          <select id="service" name="service">
+            <option value="">No preference — let the doctor decide</option>
+            <option value="cleansing">Cleansing & peels</option>
+            <option value="injectables">Injectables</option>
+            <option value="devices">Laser & device treatments</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Anything we should know?</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn">Request a consultation</button>
+          <p style="margin:0; font-size:0.85rem;">We reply within one business day.</p>
+        </div>
+      </form>
+
+      <aside class="card">
+        <h3>Visit us</h3>
+        <address>10 Kabanbay Batyr Ave, Astana<br><a href="tel:+77172000000">+7 (7172) 00-00-00</a><br><a href="mailto:hello@bellureclinic.kz">hello@bellureclinic.kz</a></address>
+        <h3 style="margin-top:22px;">Hours</h3>
+        <p>Mon–Sat: 09:00–20:00<br>Sunday: closed</p>
+        <div class="map-frame">
+          <img src="images/gallery-1.svg" alt="Illustrated map marker near Kabanbay Batyr Avenue, Astana" width="300" height="220">
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="wrap">
+      <div class="section-head"><h2>Recent results</h2><p>A few examples from the clinic — full case details shared at consultation.</p></div>
+      <div class="grid grid-4">
+        <figure class="gallery-item">
+          <img src="images/gallery-1.svg" alt="Illustrative before-and-after style graphic for a facial cleansing result">
+          <figcaption>Facial cleansing course</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/gallery-2.svg" alt="Illustrative graphic representing a biorevitalization result">
+          <figcaption>Biorevitalization, 3 sessions</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/gallery-3.svg" alt="Illustrative graphic representing a laser hair removal result">
+          <figcaption>Laser hair removal course</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="images/gallery-4.svg" alt="Illustrative graphic representing an RF skin tightening result">
+          <figcaption>RF skin tightening</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head"><h2>Frequently asked questions</h2></div>
+      <div class="faq">
+        <details>
+          <summary>Do I need a consultation before booking a treatment?</summary>
+          <p>Yes — every first visit starts with a doctor's examination, even for simple treatments like cleansing.</p>
+        </details>
+        <details>
+          <summary>How do I know which treatment is right for me?</summary>
+          <p>The doctor recommends a plan after examining your skin. You're never asked to decide from a menu alone.</p>
+        </details>
+        <details>
+          <summary>Can I cancel or reschedule?</summary>
+          <p>Yes, free of charge up to 24 hours before your appointment.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <section>
+        <h2>Bellure Clinic</h2>
+        <p>A medical cosmetology clinic. Licensed practice, visits by appointment only.</p>
+      </section>
+      <section>
+        <h2>Contact</h2>
+        <address>10 Kabanbay Batyr Ave, Astana<br><a href="tel:+77172000000">+7 (7172) 00-00-00</a></address>
+      </section>
+      <section>
+        <h2>Opening hours</h2>
+        <p>Mon–Sat: 09:00–20:00<br>Sunday: closed</p>
+      </section>
+    </div>
+    <p class="copy">© 2026 Bellure Clinic. Student project.</p>
+  </div>
+</footer>
+
+</body>
+</html>
